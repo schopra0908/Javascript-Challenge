@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body style = "background-image : url('https://media.giphy.com/media/H0FbaKTZhTB3W/giphy.gif')">
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">UFO Sightings
+            <img class="nav-ufo" src="static/images/ufo.svg">
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center" style = "color:white">
+      <h1>UFO Sightings</h1>
+      <p>The Truth is Out There</p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">The truth is within you!</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Search Records</label>
+                        <input class="form-control" id="datetime" type="text" placeholder="">
+                      </li>
+                    </ul>
+                  </div>
+                  <input class="btn btn-primary" id="return-record" style = "background-color:cadetblue" type="submit" value="Return to Records">
+                  <input class="btn btn-primary" id="filter-btn" style = "background-color:cadetblue" type="submit" value="Search by Date">
+                  <input class="btn btn-primary" id="filter-btn1" style = "background-color:cadetblue" type="submit" value="Search by City">
+                  <input class="btn btn-primary" id="filter-btn2" style = "background-color:cadetblue" type="submit" value="Search by State">
+                  <input class="btn btn-primary" id="filter-btn3" style = "background-color:cadetblue" type="submit" value="Search by Country">
+                  <input class="btn btn-primary" id="filter-btn4" style = "background-color:cadetblue" type="submit" value="Search by Shape">
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-12">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="bottom">UFO Sightings</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/app.js"></script>
+</body>
+
+</html>
